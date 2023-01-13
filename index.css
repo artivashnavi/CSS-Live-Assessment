@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    background-color:black;
+    width:100vw;
+    height:100vh;
+}
+.btn-top-flex{
+    display:flex;
+}
+.btn{
+    margin-top: 20px;
+    width:50%;
+    background-color: grey;
+    height:35px;
+    border: 2px solid white;
+    margin-left:10px;
+   color:white;
+   font-size:15px;
+   margin-right:10px;
+}
+.btn:hover{
+    background-color: rgb(174, 168, 168,0.5);
+}
+.btn1{
+    margin-top: 38%;
+    width:50%;
+    background-color: grey;
+    height:35px;
+    border: 2px solid white;
+    margin-left:10px;
+    margin-right:10px;
+   color:white;
+   font-size:15px;
+}
+.btn1:hover{
+    background-color: rgb(174, 168, 168,0.5);
+}
+
+.circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top:30%;
+    left:40%;
+    animation:myanimation 2s infinite;
+}
+@keyframes myanimation{
+    0%{
+       background-color: white;
+    }
+    25%{
+        background-color: purple;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.circle:hover{
+    border-radius: 25px;
+}
+@media screen and (min-width:280px) and (max-width:768px){
+   .circle{ 
+    left: 29%; 
+}
+.btn1{
+    margin-top: 160%;
+    
+}
+}
+@media  (min-width:912px){
+    .btn1{
+        margin-top: 70%;
+        
+    }
+    .circle{ 
+        top: 25%; 
+    }
+}
